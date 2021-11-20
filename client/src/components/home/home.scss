@@ -136,6 +136,10 @@
     background-color: $color_3_hover !important;
 }
 
+.carouselImage {
+    height: 250px;
+}
+
 
 @media (min-width: $breakpoint-xs) {
     .carouselImage {
