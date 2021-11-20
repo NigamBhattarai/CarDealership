@@ -1,0 +1,12 @@
+@import "../App.scss";
+.navbar-header {
+    background-color: rgba($primary_color,0.7);
+    color: white;
+}
+.dropdown-link {
+    text-decoration: none;
+}
+.navbar-link {
+    text-decoration: none;
+}
+@import "~bootstrap/scss/bootstrap";

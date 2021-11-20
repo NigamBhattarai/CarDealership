@@ -1,0 +1,22 @@
+@import "../App.scss";
+.contactCard {
+    margin:200px auto;
+    background-color: $secondary_color !important;
+    color: $slight_white;
+    padding: 20px;
+}
+.contactCard input, .contactCard textarea {
+    padding: 10px;
+    margin:10px;
+    background-color: $secondary_color;
+    border: 1px solid $slight_white;
+    color: $slight_white;
+}
+.contactCard input:focus, .contactCard textarea:focus {
+    background-color: $secondary_color;
+    color: $slight_white;
+}
+.contactSubmitButton {
+    margin-top: 20px;
+    float: right;
+}
