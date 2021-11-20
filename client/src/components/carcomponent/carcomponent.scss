@@ -1,4 +1,22 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 @import "../App.scss";
+.closeBtnRow {
+    position: relative;
+}
+.closeBtn {
+    background-color: rgba($color: black, $alpha: 0.7);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    text-align: center;
+    color: $basic_white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.carImage:hover {
+    border: 1px solid $slight_white;
+}
 .carDetailsContainer {
     margin: 100px auto;
 }
@@ -35,4 +53,8 @@
 }
 .bookNowButton:hover {
     background-color: $color_3_hover !important;
+}
+.otherImagesItem:hover {
+    border: 1px solid $slight_white;
+    cursor: pointer;
 }
