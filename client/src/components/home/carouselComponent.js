@@ -26,11 +26,10 @@ function CarouselComponent() {
     featuredCars.forEach((value, index, array) => {
       items.push(
         <Carousel.Item as={Link} to={"car/"+value._id} key={index}>
-          <img
+          <div
             className="d-block w-100 carouselImage"
-            src={"http://localhost:3000"+value.images[0]}
-            alt="First slide"
-          />
+            style={{background:"url(http://localhost:3000"+value.images[0]+") center center / 100% no-repeat"}}
+          ></div>
           <Carousel.Caption style={{backgroundColor:"rgba(0,0,0,0.6)"}}>
             <h3>{value.name}</h3>
             <p>{value.desc.substring(0, 200)}...</p>
