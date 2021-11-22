@@ -1,0 +1,11 @@
+@import "../variables.scss";
+@import "~bootstrap/scss/bootstrap";
+.defaultButton {
+    border-radius: 0% !important;
+    border: none;
+    background-color: $color_3 !important;
+    color: $basic_white !important;
+}
+.defaultButton:hover {
+    background-color: $color_3_hover !important;
+}

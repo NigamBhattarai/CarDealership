@@ -1,0 +1,33 @@
+@import "../App.scss";
+.loginFormRow {
+  height: 70vh;
+  .loginCol {
+    margin: auto;
+  }
+  .loginCard {
+    margin: auto;
+    background-color: $secondary_color;
+    color: $slight_white;
+    padding: 30px;
+    .card-header {
+      font-size: 23px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid $slight_white;
+    }
+    input {
+      background-color: $secondary_color;
+      color: $slight_white;
+      margin: 10px;
+      padding: 10px;
+      &:focus {
+        background-color: $secondary_color;
+        color: $slight_white;
+      }
+    }
+    .defaultButton {
+        width: 40% !important;
+        margin:auto;
+    }
+  }
+}

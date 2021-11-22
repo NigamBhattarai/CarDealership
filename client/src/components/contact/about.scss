@@ -1,0 +1,28 @@
+@import "../App.scss";
+.aboutUsContainer {
+    margin: 100px auto;
+}
+.aboutUsInfoDiv {
+    background-color: $secondary_color;
+    color: $slight_white;
+    padding: 40px;
+    text-align: center;
+    border-top-right-radius: 2%;
+}
+.aboutUsName {
+    color: $slight_white;
+    transition: .2s ease;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $slight_white;
+    text-decoration: none;
+}
+.aboutUsName:hover {
+    color: $color_3;
+}
+.aboutUsDesc {
+    margin-top: 60px;
+    font-size: 18px;
+    padding: 30px;
+}

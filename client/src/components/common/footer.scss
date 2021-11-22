@@ -1,0 +1,16 @@
+@import "../App.scss";
+
+.page-footer {
+    margin-top: 10px;
+    background-color: $secondary_color;
+    color: $slight_white;
+}
+.footerLink {
+    color: $basic_white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footerLink:hover {
+    text-decoration: underline;
+    color: $slight_white;
+}

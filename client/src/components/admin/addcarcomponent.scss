@@ -1,0 +1,38 @@
+@import "../App.scss";
+.addCarFormRow {
+  .addCarCol {
+    margin: auto;
+  }
+  .addCarCard {
+    margin: auto;
+    background-color: $secondary_color;
+    color: $slight_white;
+    padding: 30px;
+    .card-header {
+      font-size: 23px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid $slight_white;
+    }
+    input,
+    textarea {
+      background-color: $secondary_color;
+      color: $slight_white;
+      margin: 10px;
+      padding: 10px;
+      &:focus {
+        background-color: $secondary_color;
+        color: $slight_white;
+      }
+    }
+    #carIsFeatured {
+      border: 1px solid $basic_white;
+      margin: 4px;
+      padding: 4px;
+    }
+    .defaultButton {
+      width: 40% !important;
+      margin: auto;
+    }
+  }
+}
