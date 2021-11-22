@@ -1,32 +1,36 @@
-import './App.css';
+import "./App.css";
 import { Routes, Route } from "react-router";
-import {Helmet} from "react-helmet";
-import Home from './home/home';
+import { Helmet } from "react-helmet";
+import Home from "./home/home";
 import "./App.scss";
-import React from 'react';
-import {Arrivals} from './arrivals/arrivals';
-import CarComponent from './carcomponent/carComponent';
-import { transitions, positions, Provider as AlertProvider } from 'react-alert';
-import AlertTemplate from 'react-alert-template-oldschool-dark';
-import ContactComponent from './contact/contactComponent';
-import AboutComponent from './contact/aboutComponent';
+import React from "react";
+import { Arrivals } from "./arrivals/arrivals";
+import CarComponent from "./carcomponent/carComponent";
+import { transitions, positions, Provider as AlertProvider } from "react-alert";
+import AlertTemplate from "react-alert-template-oldschool-dark";
+import ContactComponent from "./contact/contactComponent";
+import AboutComponent from "./contact/aboutComponent";
+import NotFound from "./common/notFound";
+import Login from "./admin/login";
+import AddCarComponent from "./admin/addCarComponent";
 
 const options = {
   // you can also just use 'bottom center'
   position: positions.TOP_CENTER,
   timeout: 7000,
-  offset: '10px',
+  offset: "10px",
   // you can also just use 'scale'
   transition: transitions.SCALE,
   containerStyle: {
-    zIndex: 9999
-  }}
+    zIndex: 9999,
+  },
+};
 
 function App() {
   return (
     <AlertProvider template={AlertTemplate} {...options}>
       <Helmet>
-          <style>{'body { background-color: #000; }'}</style>
+        <style>{"body { background-color: #000; }"}</style>
       </Helmet>
       <Routes>
         <Route index element={<Home />} />
@@ -34,9 +38,11 @@ function App() {
         <Route path="/car/:id" element={<CarComponent />} />
         <Route path="/contact" element={<ContactComponent />} />
         <Route path="/about" element={<AboutComponent />} />
+        <Route path="/admin/login" element={<Login />} />
+        <Route path="/admin/add" element={<AddCarComponent />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AlertProvider>
-
   );
 }
 

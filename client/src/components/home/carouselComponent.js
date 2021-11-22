@@ -30,10 +30,10 @@ function CarouselComponent() {
             className="d-block w-100 carouselImage"
             style={{background:"url(http://localhost:3000"+value.images[0]+") center center / 100% no-repeat"}}
           ></div>
-          <Carousel.Caption style={{backgroundColor:"rgba(0,0,0,0.6)"}}>
+          <Carousel.Caption style={{backgroundColor:"rgba(0,0,0,0.6)",width:"100%",left:0,bottom:0,paddingBottom:"50px"}}>
             <h3>{value.name}</h3>
-            <p>{value.desc.substring(0, 200)}...</p>
-          </Carousel.Caption>
+            <p>{value.desc.substring(0, 200)}{(value.desc.length>200)&&"..."}</p>
+          </Carousel.Caption> 
         </Carousel.Item>
       );
     });
